@@ -121,7 +121,7 @@ public IActionResult GetPlans(
 
 
 [HttpPost("cart/add")]
-public IActionResult AddToCart([FromBody] CartItem request)
+public IActionResult AddToCart([FromBody] AddToCartRequest request)
 {
     try
     {

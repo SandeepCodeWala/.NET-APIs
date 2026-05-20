@@ -15,13 +15,19 @@ public class Plan
     public string SimType { get; set; }
 }
 
+public class AddToCartRequest
+{
+    public string PlanId { get; set; } = string.Empty;
+    public int Quantity { get; set; }
+}
+
 public class CartItem
 {
-    public string PlanId { get; set; }
-    public string PlanName { get; set; }
-    public string Price { get; set; }
+    public string PlanId { get; set; } = string.Empty;
+    public string PlanName { get; set; } = string.Empty;
+    public string Price { get; set; } = string.Empty;
     public int Quantity { get; set; }
-    public string SimType { get; set; }
+    public string SimType { get; set; } = string.Empty;
 }
 
 public class Cart
