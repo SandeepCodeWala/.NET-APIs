@@ -135,7 +135,7 @@ public IActionResult AddToCart([FromBody] AddToCartRequest request)
         }
 
         // Find plan
-        var plan = plans.FirstOrDefault(p => p.Id == request.PlanId);
+        var plan = plans.FirstOrDefault(p => p.Id == request.PlanId.Trim());
 
         if (plan == null)
         {
